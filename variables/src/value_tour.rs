@@ -11,8 +11,16 @@ pub fn value_tour() {
     let mut total:i32 = 10;
     total += 1;
     println!("The total value is {0}", total);
+
+    // pass to function
+    let name: String = "Guoliang".to_string();
+    print_my_name(name);
 }
 
+fn print_my_name(name: String)
+{
+    println!("Your name is {0}, from function parameter!", name);
+}
 
 pub fn shadowing()
 {
