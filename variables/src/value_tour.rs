@@ -12,9 +12,11 @@ pub fn value_tour() {
     total += 1;
     println!("The total value is {0}", total);
 
-    // pass to function
+    // pass parameter(s) to function (By value)
     let name: String = "Guoliang".to_string();
     print_my_name(name);
+
+    // pass parameter(s) to function (By reference)
 }
 
 fn print_my_name(name: String)
